@@ -377,5 +377,5 @@
 // dom concept 
 // __________
 // ans
-let get = document.childNodes[1].childNodes[2].childNodes[4];
-console.log(get)
+let parent = document.getElementById("parent");
+console.log(parent.children); // This will log a collection of 3 elements: <p>, <p>, <span>
