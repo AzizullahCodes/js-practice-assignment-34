@@ -377,5 +377,85 @@
 // dom concept 
 // __________
 // ans
-let parent = document.getElementById("parent");
-console.log(parent.children); // This will log a collection of 3 elements: <p>, <p>, <span>
+// let result = document.childNodes[1].childNodes[2].childNodes[59].childNodes[3];
+// console.log(result)
+// _________________________________________________________________________________________
+// ques no 22
+// concept of querySelector() and querySelectorAll()
+// ___________
+// ans 
+// let get = document.querySelector('p');
+// console.log(get.textContent)
+// let secondGet = document.querySelectorAll('p').textContent;
+// console.log(secondGet)
+// _______________________________________________________________________________________
+// ques no 23 
+// ans
+// let get = document.getElementById('ph').textContent;
+// console.log(get)
+// ________________________________________________________________________________
+// ques no 24
+//  Add ID to Element
+// Create a <p> tag with no id.
+// Use setAttribute() to add an id="myPara".
+// Print the element using console.log().
+// ___________
+// ans 
+// let get = document.querySelector('p');
+// get.setAttribute('id','mypara')
+// console.log(get.attributes);
+// let check = get.hasAttribute('id');
+// console.log(check)
+// ___________________________________________________________________________________
+// ques no 25
+// Check if Image Has alt
+// Create an <img src="image.jpg"> without alt.
+// Use hasAttribute("alt") to check.
+// If not present, add alt="Sample Image" using setAttribute().
+// _____________________
+// ans 
+// let get = document.querySelector('img');
+// console.log(get);
+// get.setAttribute('id','imgimg');
+// console.log(get.attributes);
+// let b = document.getElementById('imgimg');
+// console.log(b);
+// let check = b.hasAttribute('alt');
+// console.log(check)
+// ______________________________________________________________________________
+// ques no 26
+// Update Button Text
+// Create a <button title="Click me">Click</button>
+// Use getAttribute("title") and print it.
+// Then use setAttribute("title", "You clicked!") to update it.
+// ___________________
+// ans 
+// let get = document.getElementsByTagName('button')[0];
+// console.log(get);
+// let getArrib = get.getAttribute('title');
+// console.log(getArrib);
+// get.setAttribute('title','You clicked!');
+// console.log(get.attributes);
+// console.log(get.attributes.length);
+// let getNewValue = get.getAttribute('title');
+// console.log(getNewValue);
+// _________________________________________________________________________________________
+// ques no 27
+// bulb on off 
+// ___________________
+// ans 
+// let heading = document.getElementById('hh');
+// let image = document.getElementById('bulb');
+// let button = document.getElementById('btn');
+// let isON = false;
+// function bulbFunction(){if(isON){isON = false;
+//     heading.textContent = 'Bulb On';
+//     button.textContent = 'bulb off';
+//     image.src = "./assets/onimg.jfif";
+// }else{isON = true;
+//     heading.textContent = 'Bulb off';
+//     button.textContent = 'bulb on';
+//     image.src = "./assets/offimg.jfif";
+// }}
+// _____________________________________________________________________________________
+// ques no 28
