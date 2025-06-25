@@ -190,3 +190,192 @@
 //     if(a === round){result.innerHTML = 'win'}
 //     else{result.innerHTML = 'lose'}
 // }
+// ______________________________________________________________________________
+// ques no 9
+// Check if an element has an attribute
+// Goal:
+// Create an <img> tag with an id="myImage" and src="image.jpg"
+// Write JS to check if it has a src attribute and log true or false in the 
+// console.
+// Expected Output:
+// true (because src exists)
+// _____________
+// ans 
+// var check = document.getElementById('ok');
+//  console.log(check)
+//  var result = check.hasAttribute('href'
+//  );
+//  console.log(result);
+//  var getValue = check.getAttribute('href');
+//  console.log(getValue);
+//  var setNewAtrribute;
+//  check.setAttribute('href','wrong');
+//  console.log(check.attributes);
+//  var newget = check.getAttribute('acha');
+//  console.log(newget);
+//  console.log(check.attributes.length)
+// ______________________________________________________________________________________
+// ques no 10
+// 
+// __________
+// ans 
+// var get = document.getElementById('ok');
+// console.log(get);
+// var check = get.hasAttribute('href');
+// console.log(check);
+// // now i want to update it
+// get.setAttribute('width','200px');
+// console.log(get.attributes)
+// // can i set  or update by saving variable
+// let newget = get.setAttribute('width','200px');
+// ________________________________________________________________________________________
+// ques no 11
+// Check for an attribute
+// Create an <a> element with an href.
+// Use hasAttribute to check if it has href and title.
+// Log the results.
+// _________________________
+// ans 
+// let get = document.getElementById('checkAtrribute');
+// console.log(get);
+// let check = get.hasAttribute('src');
+// console.log(check);
+
+// _____________________________________________________________________________________
+// ques no 12
+//  Get an attribute value
+// Create an <img> with a src and alt.
+// Use getAttribute to get the src and alt values.
+// Log them to the console.
+// ________________
+// ans 
+// let get = document.getElementById('at');
+// console.log(get);
+// let check = get.hasAttribute('src');
+// console.log(check);
+// let getA = get.getAttribute('alt');
+// console.log(getA)
+// _____________________________________________________________________________
+// ques no 13
+// Create a <p> with no id.
+// Use setAttribute to add an id.
+// Log the element to see the change.
+// -_________________________
+// ans 
+// let get = document.querySelector('p');
+// console.log(get);
+// get.setAttribute("id","ph");
+// console.log(get.attributes);
+// ________________________________________________________________________________________
+// ques no 14
+// Read a link’s href and change it
+// Create an <a> with href="https://example.com".
+// Use getAttribute to get href.
+// Use setAttribute to change it to https://google.com.
+// ________________________
+// ans 
+// let get = document.getElementById('hf');
+// console.log(get);
+// let check =get.getAttribute('href');
+// console.log(check)
+// get.setAttribute('href',' https://google.com');
+// console.log(get.attributes);
+// let againCheck = get.getAttribute('href');
+// console.log(againCheck);
+// __________________________________________________________________________
+// ques no 15
+// Add a custom data- attribute
+// Create a <div> with no data-info.
+// Use setAttribute to add data-info="secret".
+// Use getAttribute to read it back.
+// _______________________
+// ans 
+// let get = document.querySelector('div');
+// console.log(get);
+// get.setAttribute('data-info','secret');
+// console.log(get.attributes);
+// let check = get.getAttribute('data-info');
+// console.log(check)
+// ____________________________________________________________________________________
+// ques no 16
+// Toggle an attribute based on condition
+// Create a <button> with disabled.
+// Use hasAttribute to check if it’s disabled.
+// If it is, use setAttribute to remove disabled (hint: use removeAttribute too).
+// If it’s not, add it back.
+
+// __________________________
+// ans 
+// let get = document.querySelector('button'
+// );
+// console.log(get);
+// if(get.hasAttribute('disabled')){get.removeAttribute('disabled');
+//     console.log('disabled removed')
+// }
+// else{get.setAttribute('disabled','');
+//     console.log('disable added')
+// }
+// console.log(get)
+// ___________________________________________________________________________________
+// ques no 17
+// Create a simple HTML page with a <p> element.
+// Use getElementById or querySelector to select it.
+// Log the element in the console.
+// ________________
+// ans 
+// let get = document.getElementById('ph');
+// console.log(get.innerHTML)
+// let receive = document.querySelector('p');
+// console.log(receive)
+// ______________________________________________________________________________
+// ques no 18
+//  Change Text Content
+// Select an <h1> or <p> element.
+// Use .textContent or .innerHTML to change its text.
+// ______________
+// ans 
+// let get = document.querySelector('p');
+//    get.textContent = 'welcome';
+//    console.log(get.textContent)
+// let text = get.textContent;
+// console.log(text);
+// _____________________________________________________________________________________
+// ques no 19
+// select a <div> or <p>.
+// Change its color, background, or font size using .style.
+// ________________
+// ans 
+// let get = document.getElementById('ph');
+// console.log(get);
+// function styling(){let get = document.getElementById('ph');
+//            get.className = 'head';
+// }
+// _________________________________________________________________________________
+// ques no 20
+// detailed exmaple of attributes concept clearing?
+// _________
+// let get = document.getElementById('at');
+// console.log(get);
+// // first we see hasAttribute 
+// let checkHasAttribute = get.hasAttribute('href');
+// console.log(checkHasAttribute);
+// // output = true if available and if not available gives false 
+// // now we get value of href attribute 
+// let getValue = get.getAttribute('href');
+// console.log(getValue);
+// // output = www.google.com 
+// // now we add a new attribute in html element 
+// get.setAttribute('target','_blank');
+// console.log(get.attributes);
+// // now we get the value of our new added attribute 
+// let newAddedAtrributValue = get.getAttribute('target');
+// console.log(newAddedAtrributValue);
+// // now we know that our element has how many total attributes 
+// console.log(get.attributes.length);
+// _____________________________________________________________________________________
+// ques no 21
+// dom concept 
+// __________
+// ans
+let get = document.childNodes[1].childNodes[2].childNodes[4];
+console.log(get)
