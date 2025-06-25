@@ -572,4 +572,17 @@
 //     get.classList.remove('beauty')
 // }
 // ___________________________________________________________________________________
-// 
+// ques no 37
+// hiding by button
+// _____________
+// ans 
+function hidd(){let get = document.getElementsByClassName('hide');
+    console.log(get);
+    for(var i = 0; i < get.length; i++){let a = get[i].innerHTML;
+        console.log(a)
+    }
+}
+function chg(){let get = document.getElementsByClassName('hide');
+    console.log(get);
+    for(var i = 0; i < get.length; i++){let a = '';
+        console.log(a)}}
