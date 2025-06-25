@@ -459,3 +459,117 @@
 // }}
 // _____________________________________________________________________________________
 // ques no 28
+// : Apply Inline Style
+// Create a <div> with no style.
+// Use setAttribute to set style="color: red; font-size: 20px;".
+// __________________________
+// ans 
+// let get = document.getElementsByTagName('div')[0];
+// console.log(get);
+// get.setAttribute('id','myDiv');
+// let newget = get.getAttribute('id');
+// console.log(newget);
+// let getbyId = document.getElementById('myDiv');
+// console.log(getbyId);
+// getbyId.setAttribute('style','');
+// let has = getbyId.hasAttribute('style');
+// console.log(has);
+// let valu = getbyId.getAttribute('style');
+// console.log(valu);
+// getbyId.setAttribute('style','color: red; font-size: 20px;');
+// console.log(getbyId);
+// let checkSyle = getbyId.getAttribute('style');
+// console.log(checkSyle);
+// ________________________________________________________________________________
+// ques no 29
+// Modify Link Target
+// Create a link with target="_self".
+// Change it to "_blank" using setAttribute.
+// ___________________
+// ans 
+// let get = document.querySelector('link');
+// console.log(get);
+// get.setAttribute('target','_blank');
+// console.log(get.attributes);
+// console.log(get.attributes.length);
+// let check = get.getAttribute('target');
+// console.log(check)
+// ________________________________________________________________________________________
+// ques no 30 
+//  Check alt on Image
+// Create an <img> tag without alt.
+// Use hasAttribute to check if alt is there.
+// If not, add alt="sample image" using setAttribute.
+// _________________
+// ans 
+// let get = document.getElementsByTagName('img')[0];
+// console.log(get);
+// let check = get.hasAttribute('alt');
+// console.log(check);
+// get.setAttribute('alt','sample image');
+// console.log(get.attributes);
+// console.log(get.attributes.length);
+// let get2 =get.getAttribute('alt');
+// console.log(get2)
+// _____________________________________________________________________________________
+// ques no 31 
+// apply css by className
+// _______
+// ans 
+// function colorListItems() {
+//   let ul = document.getElementsByClassName("myList")[0]; // get the <ul>
+//   let listItems = ul.getElementsByTagName("li");         // get all <li> children
+
+//   for (let i = 0; i < listItems.length; i++) {
+//     listItems[i].style.color = "green"; // apply same color
+//   }
+// }
+// ____________________________________________________________________________________
+// ques no 32
+// style by className
+// ______________
+// ans 
+// var liEl = document.getElementsByClassName('liEl');
+// console.log(liEl);
+// for(var i = 0; i < liEl.length; i ++){
+//     liEl[i].style.color = 'blue'; }
+// _______________________________________________________________________________
+// ques no 33
+// apply css by js 
+// _________________
+// ans 
+// let get = document.getElementsByClassName('list');
+// console.log(get);
+// for(let i = 0; i < get.length; i++){get[i].style.color = 'red';}
+//    __________________________________________________________________________
+// ques no 34
+// apply css by js
+// _____________
+// ans 
+// let get = document.getElementsByClassName('st');
+// console.log(get);
+// for(var i = 0; i<get.length;i++){get[i].style.color = 'green';}
+// ___________________________________________________________________________________
+// ques no 35
+// apply css by js classList
+// ans 
+// function add(){let a = document.getElementById('heading');
+//          a.classList.add('superHeading')
+// }
+// function remove(){let a = document.getElementById('heading');
+//          a.classList.remove('superHeading')}
+         
+//          function toggle(){let a = document.getElementById('heading');
+//          a.classList.toggle('superHeading')}
+// _____________________________________________________________________________
+// ques no 36
+// css by classList 
+// function designing(){let get = document.getElementById('heading');
+//     get.classList.add('beauty');
+// }
+
+// function removing(){let get = document.getElementById('heading');
+//     get.classList.remove('beauty')
+// }
+// ___________________________________________________________________________________
+// 
