@@ -576,13 +576,180 @@
 // hiding by button
 // _____________
 // ans 
-function hidd(){let get = document.getElementsByClassName('hide');
-    console.log(get);
-    for(var i = 0; i < get.length; i++){let a = get[i].innerHTML;
-        console.log(a)
-    }
-}
-function chg(){let get = document.getElementsByClassName('hide');
-    console.log(get);
-    for(var i = 0; i < get.length; i++){let a = '';
-        console.log(a)}}
+// function hidd(){let get = document.getElementsByClassName('hide');
+//     console.log(get);
+//     for(var i = 0; i < get.length; i++){let a = get[i].innerHTML;
+//         console.log(a)
+//     }
+// }
+// function chg(){let get = document.getElementsByClassName('hide');
+//     console.log(get);
+//     for(var i = 0; i < get.length; i++){let a = '';
+//         console.log(a)}}
+// ______________________________________________________________________________________
+// ques no 38
+//  Changing Case Practice Tasks
+// ✅ Task 1: Basic toUpperCase
+// Ask the user for their name using prompt().
+// Show it in uppercase using alert() and console.log().
+// _____________________
+// ans 
+// function changing(){let get = document.getElementById('it').value;
+// console.log(get);
+// get = get.toUpperCase();
+// document.getElementById('ph').innerHTML = get;}
+// ____________________________________________________________________________________
+// ques no 39 
+// function changing(){let get = document.getElementById('it').value;
+//     get = get.toLowerCase();
+//     document.getElementById('ph').innerHTML = get;
+// }
+// ________________________________________________________________________________
+// QUES NO 40
+//  Upper + Lower Combo
+// Get input from user.
+// Display both:
+// All uppercase
+// All lowercase
+// ________________
+// ANS 
+// function changing(){let get = document.getElementById('it').value;
+//                      get = get.toLowerCase();
+//                      document.getElementById('ph').innerHTML = get;
+            
+//                      get = get.toUpperCase();
+//                      document.getElementById('ph2').textContent = get;
+// }
+// ____________________________________________________________________
+// ques no 41
+// Capitalize First Letter Only
+// Ask for a single word.
+// Convert only the first letter to uppercase, rest should be lowercase.
+// E.g., hello → Hello 
+// __________________________
+// ans 
+// function changing(){let get = document.getElementById('it').value;
+//     console.log(get);
+//     let firstChar = get.charAt();
+//     console.log(firstChar);
+//     firstChar = firstChar.toUpperCase();
+//     let otherChar = get.slice(1);
+//     console.log(otherChar);
+//     let result = firstChar + otherChar;
+//     console.log(result);
+//     document.getElementById('ph').textContent = result;
+// }
+// __________________________________________________________________________________
+// ques no 42
+// First Name Only
+// String: "Ali Raza"
+// Extract the first name "Ali".
+// _____________________
+// function extracting(){let get = document.getElementById('it').value;
+//           let result = get.slice(0,3);
+//           document.getElementById('ph').innerHTML = result;
+// }
+// ____________________________________________________________________________________
+// ques no  43 
+// Last 4 Characters
+// String: "PakistanZindabad"
+// Extract the last 4 characters.
+// ____________________
+// ans 
+// function extracting(){let get = document.getElementById('it').value;
+//     let result = get.slice(get.length-8);
+//     document.getElementById('ph').innerHTML  = result;
+// }
+// ________________________________________________________________________________
+// ques no 44 
+// Remove Extension
+// String: "index.html"
+// Extract "index" only.
+// __________________________
+// ans 
+// function removing(){let get = document.getElementById('it').value;
+//            let index = get.indexOf('.');
+//            let result = get.slice(0,index);
+//            console.log(index);
+//            document.getElementById('ph').innerHTML = result;
+            
+// }
+// ________________________________________________________________________________
+// ques no 45
+//  Extract File Extension
+// String: "photo.png"
+// Goal: Extract and print "png"
+// _____________
+// ans 
+// function extracting(){let get = document.getElementById('it').value;
+//                         let index = get.lastIndexOf('p');
+//                         let result = get.slice(index);
+//                     document.getElementById('ph').innerHTML = result;
+// }
+// _______________________________________________________________________________________
+// ques no 46 
+//  Extract Username from URL
+// String: "https://github.com/azizullah"
+// Goal: Extract and print "azizullah"
+// _______________________________________
+// ans 
+// function extracting(){let get = document.getElementById('it').value;
+//                         let index = get.indexOf('a');
+//                         let result = get.slice(index);
+//                     document.getElementById('ph').innerHTML = result;
+// }
+// ________________________________________________________________________________________
+// ques no 47 
+//  Check 2nd Last Character
+// String: "interview"
+// Get: Second last character
+// Expected Output: e
+// ________________
+// ans 
+// function extracting(){let get = document.getElementById('it').value;
+//                         let index = get.indexOf('e');
+//                         let result = get.charAt(index);
+//                     document.getElementById('ph').innerHTML = result;
+// }
+// _____________________________________________________________________________________________
+// ques no 48
+// Change . to !
+// String: "Hello. How are you?"
+// Replace "." with "!"
+// Expected Output: "Hello! How are you?"
+// __________________________
+// ans 
+ function changing(){let get = document.getElementById('it').value;
+                  let index = get.indexOf('.');
+                  let char = get.charAt(index)
+                 let result = get.replace(char,'!')
+                 document.getElementById('ph').textContent = result;
+ }
+// _____________________________________________________________________________________________________
+// ques no 49
+// rounding number task
+// math.round( )
+// _________
+// ans 
+ function rounding(){let get = document.getElementById('it').value;
+                   let result = Math.round(get);
+                  document.getElementById('d').innerText = result;
+ }
+// _______________________________________________________________________________________________
+// ques no 50
+// math.ceil( )
+// ______________________
+// ans 
+// function rounding(){let get = document.getElementById('it').value;
+//                   let result = Math.ceil(get);
+//                   document.getElementById('d').innerText = result;
+// }
+// ______________________________________________________________________________________________
+// ques no 51 
+// math.floor( );
+// ____________________
+// ans 
+// function rounding(){let get = document.getElementById('it').value;
+//                   let result = Math.floor(get);
+//                   document.getElementById('d').innerText = result;
+// }
